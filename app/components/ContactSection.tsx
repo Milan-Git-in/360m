@@ -54,11 +54,12 @@ export default function ContactSection() {
                       Private Lines
                     </h3>
                     <div className="grid grid-cols-2 gap-x-8 gap-y-3 text-on-surface-variant font-body-md">
-                      <a href="tel:+919999000001" className="hover:text-secondary transition-colors">
-                        +91 99990 00001
+                      <a href="tel:+919638770089" className="hover:text-secondary transition-colors">
+                        +91 96387 70089
+
                       </a>
-                      <a href="tel:+919999000002" className="hover:text-secondary transition-colors">
-                        +91 99990 00002
+                      <a href="tel:+919638770289" className="hover:text-secondary transition-colors">
+                        +91 96387 70289
                       </a>
                     </div>
                   </div>
