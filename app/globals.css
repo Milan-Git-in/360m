@@ -20,8 +20,16 @@
   --font-poppins: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-poppins);
+}
+
+section[id] {
+  scroll-margin-top: 6rem;
 }
 
 .font-headline-xl {
