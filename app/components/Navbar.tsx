@@ -57,7 +57,7 @@ export default function Navbar() {
       </nav>
       <a
         className="metallic-gold-btn px-8 py-3 rounded-full font-label-md hover:scale-105 transition-all duration-500 active:scale-95 tracking-widest shadow-lg hidden sm:block"
-        href="https://wa.me/919999000001"
+        href="https://wa.me/919638770089"
         aria-label="Book via WhatsApp"
         rel="noopener noreferrer"
         target="_blank"
