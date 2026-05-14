@@ -18,7 +18,7 @@ export default function LegacySection() {
               <FadeIn delay={0.2}>
                 <div className="group cursor-default">
                   <span className="text-7xl md:text-9xl font-bold text-primary italic leading-none group-hover:text-secondary transition-colors duration-500 block text-glow">
-                    <AnimatedCounter from={0} to={12} suffix="+" />
+                    <AnimatedCounter from={0} to={4} suffix="+" />
                   </span>
                   <p className="font-label-md text-secondary tracking-[0.3em] mt-6">
                     Years of Crafting Perfection
