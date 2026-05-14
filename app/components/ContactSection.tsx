@@ -83,7 +83,7 @@ export default function ContactSection() {
                 </p>
                 <a
                   className="w-full metallic-gold-btn py-6 rounded-2xl font-label-md flex items-center justify-center gap-4 hover:scale-105 transition-transform duration-300 shadow-lg text-lg"
-                  href="https://wa.me/919999000001"
+                  href="https://wa.me/919638770089"
                   rel="noopener noreferrer"
                   target="_blank"
                   aria-label="Contact 360 Events via corporate WhatsApp"
