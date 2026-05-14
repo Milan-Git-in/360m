@@ -17,7 +17,7 @@ export default function Footer() {
           </div>
           <p className="font-body-md opacity-70 leading-loose">
             Pioneering the future of heritage-driven hospitality and large-scale
-            event excellence since 2012.
+            event excellence since 2022.
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-2 gap-24">

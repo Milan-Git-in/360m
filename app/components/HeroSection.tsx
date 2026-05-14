@@ -33,7 +33,7 @@ export default function HeroSection() {
           transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         >
           <div className="inline-block px-6 py-2 mb-8 border border-secondary-fixed/50 text-secondary-fixed font-label-md tracking-[0.4em] rounded-full bg-white/5 backdrop-blur-md">
-            ESTABLISHED 2012
+            ESTABLISHED 2022
           </div>
           <h1 className="font-headline-xl text-[54px] md:text-[100px] text-surface-bright mb-8 leading-[1] italic text-glow">
             THE GOLD STANDARD OF

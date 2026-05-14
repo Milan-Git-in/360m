@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "360 EVENTS | The Gold Standard of Festive Hospitality",
   description:
-    "Gujarat's premier luxury event management firm since 2012. Curating world-class Navratri, Dandiya, and heritage celebrations with 2M+ elite guest experiences across Ahmedabad, Mumbai, and London.",
+    "Gujarat's premier luxury event management firm since 2022. Curating world-class Navratri, Dandiya, and heritage celebrations with 2M+ elite guest experiences across Ahmedabad, Mumbai, and London.",
   keywords: [
     "360 Events",
     "luxury events Gujarat",
@@ -64,8 +64,8 @@ const jsonLd = {
   "@type": "EventPlanning",
   name: "360 EVENTS",
   description:
-    "Gujarat's premier luxury event management firm specializing in Navratri, Dandiya, and heritage celebrations since 2012.",
-  foundingDate: "2012",
+    "Gujarat's premier luxury event management firm specializing in Navratri, Dandiya, and heritage celebrations since 2022.",
+  foundingDate: "2022",
   url: "https://360events.in",
   logo: "/images/hero-bg.jpg",
   address: {
