@@ -6,24 +6,24 @@ import FadeIn from "./FadeIn";
 
 const partners = [
   {
-    name: "Queen of Dandiya",
-    img: "/images/partner-queen-dandiya.jpg",
-    alt: "Queen of Dandiya performing at a 360 Events Navratri celebration",
+    name: "Jasmine Sandlas",
+    img: "/images/js.png",
+    alt: "Jasmine Sandlas",
   },
   {
-    name: "Folk Icon",
-    img: "/images/partner-folk-icon.jpg",
-    alt: "Renowned folk musician performing live at a 360 Events festival",
+    name: "Aditya Gadhvi",
+    img: "/images/ag.png",
+    alt: "Aditya Gadhvi",
   },
   {
-    name: "Soulful Voice",
-    img: "/images/partner-soulful-voice.jpg",
-    alt: "Celebrated singer delivering a soulful performance at a heritage event",
+    name: "Geeta Rabari",
+    img: "/images/gr.png",
+    alt: "Geeta Rabari",
   },
   {
-    name: "Heritage Muse",
-    img: "/images/partner-heritage-muse.jpg",
-    alt: "Heritage Muse artist at a traditional Gujarati cultural celebration",
+    name: "Honey Singh",
+    img: "/images/hs.png",
+    alt: "Honey Singh",
   },
 ];
 
@@ -115,7 +115,7 @@ export default function PartnersSection() {
             id="partners-heading"
             className="font-headline-xl text-secondary-fixed mb-24 italic text-5xl"
           >
-            The Icons of 360
+            Star Studded Moments
           </h2>
         </FadeIn>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-16">

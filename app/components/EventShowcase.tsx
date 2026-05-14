@@ -171,7 +171,7 @@ export default function EventShowcase() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-secondary/5 blur-[160px]" />
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-7xl md:mx-auto relative z-10">
         <FadeIn>
           <div className="text-center mb-16">
             <div className="inline-block px-5 py-1.5 mb-6 border border-secondary-fixed/30 text-secondary-fixed font-label-md tracking-[0.4em] rounded-full bg-white/5 backdrop-blur-md text-xs">
@@ -191,7 +191,9 @@ export default function EventShowcase() {
 
         {/* Main video player — single persistent element, no AnimatePresence unmount */}
         <FadeIn delay={0.15}>
-          <div className="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-black/40 aspect-video bg-black group">
+          <div className="relative rounded-[2rem] overflow-hidden border-red-500 border-2
+          h-[70dvh] w-[90dvw] sm:w-full sm:h-[66dvh]
+          shadow-2xl shadow-black/40 aspect-video bg-black group">
             <video
               ref={videoRef}
               className="w-full h-full object-cover"
