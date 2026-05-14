@@ -92,7 +92,7 @@ export default function ContactSection() {
                   <ArrowRight size={24} aria-hidden="true" />
                 </a>
                 <p className="mt-8 text-xs text-on-surface-variant/50 font-label-md tracking-widest">
-                  Available 10:00 AM - 08:00 PM IST
+                  Available 10:00 AM - 07:00 PM IST
                 </p>
               </div>
             </div>

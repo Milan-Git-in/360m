@@ -75,12 +75,7 @@ export default function Footer() {
           <span className="text-xs uppercase tracking-widest font-label-md">
             Ahmedabad
           </span>
-          <span className="text-xs uppercase tracking-widest font-label-md">
-            Mumbai
-          </span>
-          <span className="text-xs uppercase tracking-widest font-label-md">
-            London
-          </span>
+         
         </div>
       </div>
     </footer>
