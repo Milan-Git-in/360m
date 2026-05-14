@@ -37,7 +37,7 @@ export default function ContactSection() {
                       Headquarters
                     </h3>
                     <p className="font-body-md text-on-surface-variant leading-relaxed">
-                      360 Tower, Sindhu Bhavan Road,
+                      360 Events, Sindhu Bhavan Road,
                       <br />
                       Ahmedabad, Gujarat 380054
                     </p>
