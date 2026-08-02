@@ -2,8 +2,6 @@ import { NextResponse } from "next/server";
 import { getRedis } from "../../lib/redis";
 import { defaultPasses } from "../../data/passes";
 
-export const runtime = "edge";
-
 const REDIS_KEY = "360events:passes";
 
 export async function GET() {
