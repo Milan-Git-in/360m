@@ -105,12 +105,10 @@ export default function HospitalitySection() {
                         ? "py-5 px-10 text-lg hover:shadow-[0_0_20px_rgba(233,195,73,0.5)]"
                         : "py-4 px-8 hover:brightness-110"
                     }`}
-                    href="https://wa.me/919999000001"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    aria-label={`Inquire about ${pkg.title} package via WhatsApp`}
+                    href="/passes"
+                    aria-label={`Browse ${pkg.title} passes`}
                   >
-                    {pkg.highlight ? "Elite Reservation" : "Inquire"}
+                    {pkg.highlight ? "Explore Passes" : "View Passes"}
                   </a>
                 </div>
               </article>

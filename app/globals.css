@@ -76,6 +76,10 @@ section[id] {
 
 .parchment-texture {
     background-image: url("/images/parchment-texture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
 }
 
 .mandala-bg {
@@ -98,5 +102,14 @@ section[id] {
     scrollbar-width: none;
 }
 .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbars globally */
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+*::-webkit-scrollbar {
     display: none;
 }

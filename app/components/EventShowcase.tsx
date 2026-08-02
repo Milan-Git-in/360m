@@ -191,7 +191,7 @@ export default function EventShowcase() {
 
         {/* Main video player — single persistent element, no AnimatePresence unmount */}
         <FadeIn delay={0.15}>
-          <div className="relative rounded-[2rem] overflow-hidden border-red-500 border-2
+          <div className="relative rounded-[2rem] overflow-hidden border border-white/10
           h-[70dvh] w-[90dvw] sm:w-full sm:h-[66dvh]
           shadow-2xl shadow-black/40 aspect-video bg-black group">
             <video
@@ -290,16 +290,16 @@ export default function EventShowcase() {
 
         {/* Thumbnail strip */}
         <FadeIn delay={0.3}>
-          <div className="mt-8 flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
+          <div className="mt-8 flex items-center gap-4 overflow-x-auto py-3 px-2 scrollbar-hide">
             {events.map((event, index) => (
               <button
                 key={event.src}
                 onClick={() => goTo(index)}
                 aria-label={`Play ${event.title}`}
-                className={`relative shrink-0 w-36 md:w-44 aspect-video rounded-xl overflow-hidden transition-all duration-500 group/thumb ${
+                className={`relative shrink-0 w-36 md:w-44 aspect-video rounded-xl overflow-hidden transition-all duration-300 group/thumb ${
                   index === activeIndex
-                    ? "ring-2 ring-secondary-fixed ring-offset-2 ring-offset-primary scale-105"
-                    : "opacity-50 hover:opacity-80 grayscale hover:grayscale-0"
+                    ? "ring-2 ring-secondary-fixed ring-offset-2 ring-offset-primary shadow-lg shadow-black/50"
+                    : "opacity-50 hover:opacity-90 grayscale hover:grayscale-0 hover:scale-[1.02]"
                 }`}
               >
                 <video
@@ -318,7 +318,7 @@ export default function EventShowcase() {
                   )}
                 </div>
                 {index === activeIndex && (
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/20">
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/20 overflow-hidden rounded-b-xl">
                     <div
                       className="h-full bg-secondary-fixed transition-all duration-100"
                       style={{ width: `${progress}%` }}
