@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { redis } from "../../lib/redis";
+import { getRedis } from "../../lib/redis";
 import { defaultPasses } from "../../data/passes";
 
 export const runtime = "edge";
@@ -8,6 +8,7 @@ const REDIS_KEY = "360events:passes";
 
 export async function GET() {
   try {
+    const redis = getRedis();
     let data = await redis.get(REDIS_KEY);
 
     // If no data exists yet, seed with defaults
@@ -58,6 +59,7 @@ export async function POST(request: Request) {
     }
 
     // Save to Redis
+    const redis = getRedis();
     await redis.set(REDIS_KEY, passes);
 
     return NextResponse.json({ success: true }, { status: 200 });
