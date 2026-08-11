@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
-import { defaultPasses, Pass, formatPrice, getStartingPrice } from "../data/passes";
+import {
+  defaultPasses,
+  Pass,
+  formatPrice,
+  getStartingPrice,
+} from "../data/passes";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
@@ -17,12 +22,13 @@ export default function PopularEvents() {
     <section className="px-4">
       <div className="flex justify-between items-end mb-6">
         <div>
-          <h2 className="font-playfair text-xl font-bold text-on-surface">Popular Events</h2>
-          <p className="text-sm text-on-surface-variant">Popular events to attend with friends</p>
+          <h2 className="font-playfair text-xl font-bold text-on-surface">
+            Popular Events
+          </h2>
+          <p className="text-sm text-on-surface-variant">
+            Popular events to attend with friends
+          </p>
         </div>
-        <Link href="#" className="flex items-center gap-1 text-sm font-semibold text-secondary hover:underline">
-          View All <ArrowRight size={16} />
-        </Link>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -48,7 +54,7 @@ export default function PopularEvents() {
               <p className="text-xs text-on-surface-variant mb-4">
                 {pass.subtitle}
               </p>
-              
+
               <div className="mt-auto">
                 <span className="font-bold text-on-surface-variant text-sm">
                   {formatPrice(getStartingPrice(pass))} onwards
