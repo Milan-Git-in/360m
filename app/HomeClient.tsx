@@ -1,25 +1,20 @@
 "use client";
 
 import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import LegacySection from "./components/LegacySection";
-import PartnersSection from "./components/PartnersSection";
-import EventShowcase from "./components/EventShowcase";
-import HospitalitySection from "./components/HospitalitySection";
-import ContactSection from "./components/ContactSection";
+import HeroCarousel from "./components/HeroCarousel";
+import PopularEvents from "./components/PopularEvents";
+import EventsByArtist from "./components/EventsByArtist";
+import ExploreEvents from "./components/ExploreEvents";
 import Footer from "./components/Footer";
 
 export default function HomeClient() {
   return (
-    <div className="overflow-x-hidden">
+    <div className="bg-primary min-h-screen text-on-surface  font-poppins relative">
       <Navbar />
-      <main>
-        <HeroSection />
-        <LegacySection />
-        <PartnersSection />
-        <EventShowcase />
-        <HospitalitySection />
-        <ContactSection />
+      <main className="space-y-12">
+        <HeroCarousel />
+        <PopularEvents />
+        <EventsByArtist />
       </main>
       <Footer />
     </div>

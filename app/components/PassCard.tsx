@@ -14,11 +14,9 @@ export default function PassCard({ pass, index }: PassCardProps) {
   const isSoldOut = isPassFullySoldOut(pass);
   const startingPrice = getStartingPrice(pass);
 
-  // Compute if any tier includes dome or food
   const hasDome = pass.tiers.some(t => t.name.toLowerCase().includes("dome") || t.includes.some(i => i.toLowerCase().includes("dome")));
   const hasFood = pass.tiers.some(t => t.name.toLowerCase().includes("food") || t.includes.some(i => i.toLowerCase().includes("food") || i.toLowerCase().includes("buffet")));
 
-  // Get a unique tag from tiers if available, prioritizing BEST SELLER or POPULAR
   const featuredTierTag = pass.tiers.find(t => t.tag === "BEST SELLER")?.tag || pass.tiers.find(t => t.tag)?.tag;
 
   return (
@@ -29,8 +27,8 @@ export default function PassCard({ pass, index }: PassCardProps) {
       transition={{ duration: 0.6, delay: index * 0.08, ease: [0.16, 1, 0.3, 1] }}
       className={`group relative rounded-3xl overflow-hidden transition-all duration-700 flex flex-col ${
         pass.isFeatured
-          ? "bg-white/10 border-2 border-secondary-fixed shadow-[0_0_40px_rgba(233,195,73,0.15)]"
-          : "bg-white/5 border border-white/10 hover:border-secondary-fixed/60"
+          ? "bg-primary-container border-2 border-secondary shadow-[0_0_40px_rgba(225,6,0,0.15)]"
+          : "bg-primary-container border border-outline-variant hover:border-secondary/60"
       }`}
     >
       {/* Image */}
@@ -44,7 +42,7 @@ export default function PassCard({ pass, index }: PassCardProps) {
             isSoldOut ? "grayscale opacity-40" : "opacity-50 group-hover:opacity-70"
           }`}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/70 to-transparent pointer-events-none" />
 
         {/* Tag badge */}
         {(featuredTierTag || isSoldOut) && (
@@ -52,7 +50,7 @@ export default function PassCard({ pass, index }: PassCardProps) {
             className={`absolute top-4 right-4 px-3.5 py-1 rounded-full text-[10px] font-bold tracking-widest shadow-lg ${
               isSoldOut
                 ? "bg-red-500/90 text-white"
-                : "bg-secondary-fixed text-on-secondary-fixed"
+                : "bg-secondary text-white"
             }`}
           >
             {isSoldOut ? "SOLD OUT" : featuredTierTag}
@@ -78,24 +76,24 @@ export default function PassCard({ pass, index }: PassCardProps) {
       <div className="p-6 pb-8 flex flex-col flex-1">
         <h3
           className={`font-headline-md italic mb-1 text-xl ${
-            pass.isFeatured ? "text-secondary-fixed" : "text-surface-bright"
+            pass.isFeatured ? "text-secondary" : "text-on-surface"
           }`}
         >
           {pass.title}
         </h3>
-        <p className="text-surface-variant/60 text-sm mb-5 line-clamp-2">
+        <p className="text-on-surface-variant text-sm mb-5 line-clamp-2">
           {pass.subtitle}
         </p>
 
         {/* Tiers preview */}
         <div className="flex flex-wrap gap-2 mb-6 mt-auto">
-          <span className="text-[11px] text-surface-variant/90 font-medium mb-1 w-full uppercase tracking-widest">
+          <span className="text-[11px] text-on-surface-variant font-medium mb-1 w-full uppercase tracking-widest">
             {pass.tiers.length} Options Available:
           </span>
           {pass.tiers.map((t) => (
             <span
               key={t.id}
-              className={`text-[10px] px-2 py-1 rounded border ${t.isSoldOut ? "border-red-500/30 text-red-400/50 line-through" : "border-white/10 text-surface-variant/70 bg-white/5"}`}
+              className={`text-[10px] px-2 py-1 rounded border ${t.isSoldOut ? "border-red-500/30 text-red-400/50 line-through" : "border-outline-variant text-on-surface-variant bg-primary/50"}`}
             >
               {t.name}
             </span>
@@ -105,11 +103,11 @@ export default function PassCard({ pass, index }: PassCardProps) {
         {/* Price & CTA */}
         <div className="flex items-end justify-between gap-4 mt-auto">
           <div>
-            <span className="text-[10px] text-surface-variant/50 font-label-md tracking-widest block mb-1">
+            <span className="text-[10px] text-on-surface-variant font-label-md tracking-widest block mb-1">
               STARTING FROM
             </span>
             <div className="flex items-baseline gap-2">
-              <span className="text-2xl font-bold text-secondary-fixed">
+              <span className="text-2xl font-bold text-secondary">
                 {formatPrice(startingPrice)}
               </span>
             </div>
@@ -119,8 +117,8 @@ export default function PassCard({ pass, index }: PassCardProps) {
             href={`/passes/${pass.id}`}
             className={`px-6 py-3 rounded-full font-label-md text-xs tracking-widest transition-all duration-300 whitespace-nowrap ${
               isSoldOut
-                ? "bg-white/10 text-surface-variant/40 cursor-not-allowed pointer-events-none"
-                : "metallic-gold-btn hover:scale-105 active:scale-95 shadow-md"
+                ? "bg-outline-variant text-on-surface-variant cursor-not-allowed pointer-events-none"
+                : "bg-secondary text-white hover:bg-secondary/90 hover:scale-105 active:scale-95 shadow-md shadow-secondary/30"
             }`}
             aria-label={`View details for ${pass.title}`}
           >

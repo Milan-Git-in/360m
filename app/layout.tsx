@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { CartProvider } from "./components/CartContext";
 
 export const metadata: Metadata = {
   title: "360 EVENTS | The Gold Standard of Festive Hospitality",
@@ -106,7 +107,7 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-surface text-on-surface font-body-md parchment-texture selection:bg-secondary/30 antialiased">
-        {children}
+        <CartProvider>{children}</CartProvider>
       </body>
     </html>
   );

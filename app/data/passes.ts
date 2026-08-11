@@ -32,7 +32,7 @@ export const defaultPasses: Pass[] = [
     subtitle: "Experience the magic of Kirtidan Gadhvi live",
     description:
       "Join us for an unforgettable evening with the legendary Kirtidan Gadhvi. Experience traditional garba in a luxurious setting with premium amenities and unmatched hospitality.",
-    img: "/images/event-1.jpg",
+    img: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=600&auto=format&fit=crop",
     category: "single-night",
     isFeatured: true,
     tiers: [
@@ -78,7 +78,7 @@ export const defaultPasses: Pass[] = [
     subtitle: "The Dandiya Queen returns to Gujarat",
     description:
       "Dance to the iconic tunes of Falguni Pathak. A night of energetic garba, vibrant colors, and premium hospitality awaits you.",
-    img: "/images/event-2.jpg",
+    img: "https://images.unsplash.com/photo-1540039155732-d68b54f5873d?q=80&w=600&auto=format&fit=crop",
     category: "single-night",
     isFeatured: true,
     tiers: [
@@ -124,7 +124,7 @@ export const defaultPasses: Pass[] = [
     subtitle: "Unrestricted access for all 9 nights",
     description:
       "The ultimate Navratri experience. Enjoy unrestricted access to all 9 nights of celebrations with exclusive perks and priority services.",
-    img: "/images/event-3.jpg",
+    img: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=600&auto=format&fit=crop",
     category: "season",
     isFeatured: false,
     tiers: [
@@ -175,7 +175,7 @@ export const defaultPasses: Pass[] = [
     subtitle: "High energy traditional beats",
     description:
       "Experience the high energy of Kinjal Dave. Perfect for groups and families looking for a traditional yet luxurious garba night.",
-    img: "/images/event-4.jpg",
+    img: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=600&auto=format&fit=crop",
     category: "single-night",
     isFeatured: false,
     tiers: [
@@ -206,7 +206,7 @@ export const defaultPasses: Pass[] = [
     subtitle: "Host your team in style",
     description:
       "The perfect setting for corporate hosting. An exclusive table for 10 guests with premium catering and dedicated service.",
-    img: "/images/hero-bg.jpg",
+    img: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=600&auto=format&fit=crop",
     category: "vvip",
     isFeatured: true,
     tiers: [
