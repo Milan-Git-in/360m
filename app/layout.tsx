@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "nzTymNTlMin9ervWZquI2BeYIUVPEAiaRKlsdMo4-DU",
+    google: "Uhv8JXPHX4zMQxv60JcO1jiUkVxdyMSoQZatYQ7Mteg",
   },
   openGraph: {
     type: "website",
@@ -197,10 +197,10 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="canonical" href="https://Group360.vercel.app" />
-        <meta
+        {/* <meta
           name="google-site-verification"
-          content="nzTymNTlMin9ervWZquI2BeYIUVPEAiaRKlsdMo4-DU"
-        />
+          content="Uhv8JXPHX4zMQxv60JcO1jiUkVxdyMSoQZatYQ7Mteg"
+        /> */}
 
         {/* Preconnect for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
