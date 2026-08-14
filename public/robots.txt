@@ -1,0 +1,32 @@
+# Robots.txt for 360 EVENTS - Event Management & Pass Booking
+# https://Group360.vercel.app
+
+User-agent: *
+Allow: /
+Allow: /passes/
+Allow: /events/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /temp_index.html
+Disallow: /*.json$
+Crawl-delay: 1
+
+# Specific rules for Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Sitemap location
+Sitemap: https://Group360.vercel.app/sitemap.xml
+Sitemap: https://Group360.vercel.app/sitemap-events.xml
+Sitemap: https://Group360.vercel.app/sitemap-passes.xml
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

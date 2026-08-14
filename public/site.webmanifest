@@ -1,0 +1,57 @@
+{
+  "name": "360 EVENTS - Premium Event Management & Pass Booking",
+  "short_name": "360 EVENTS",
+  "description": "Book premium event passes and VIP experiences at 360 EVENTS Ahmedabad. Navratri, Dandiya, and luxury celebrations.",
+  "start_url": "https://Group360.vercel.app",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#ffd700",
+  "scope": "/",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "categories": ["business", "events"],
+  "screenshots": [
+    {
+      "src": "/images/hero-bg.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/images/hero-bg.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Book Event Passes",
+      "short_name": "Book Passes",
+      "description": "Quickly book event passes",
+      "url": "https://Group360.vercel.app/passes",
+      "icons": [
+        {
+          "src": "/images/hero-bg.jpg",
+          "sizes": "192x192",
+          "type": "image/jpeg"
+        }
+      ]
+    }
+  ]
+}
